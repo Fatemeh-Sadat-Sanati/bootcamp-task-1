@@ -1,0 +1,115 @@
+/* -reset- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* -root variable- */
+:root {
+    --color-primary: ;
+    --color-secondary: ;
+    --color-body: #fff;
+    --avatar-size: 40px;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    padding: 15px;
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.request-title {
+    margin-bottom: 50px;
+}
+.request-body {
+   display: flex;
+   flex-direction: column;
+   gap: 70px;
+   padding: 20px;
+}
+@media screen and (min-width:768px) {
+    .request-body {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 70px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .request-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 70px;
+    }
+}
+.request-avatar img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+}
+.request-documentation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.request-documentation__number {
+    display: flex;
+    align-items: center;
+}
+.documentation-number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px !important;
+    height: 30px !important;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: darkblue;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.documentation-text {
+    color: darkblue;
+}
+.documentation-date, .earmark-number {
+    color: darkgrey;
+}
+.request-earmark {
+    margin-bottom: 20px;
+}
+.request-avatar {
+    display: flex;
+    justify-content: space-between;
+}
+.avatar-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.avatar-image img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+.avatar-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+button {
+    width: 150px;
+    height: 64px;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #219F95;
+    border:2px solid #219F95;
+    padding: 10px;
+    border-radius: 8px;
+}
